@@ -3,7 +3,12 @@
     src: url("assets/fontes/Bebas-Regular.otf") format("opentype");
 }
 
-.teste {
+.home {
+    
+}
+
+
+.hello {
     font-size: 40px;
 }
 
@@ -29,7 +34,6 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 
@@ -37,7 +41,7 @@ body {
    4. NAVBAR GLASS (IA)
 ================================ */
 .navbar-glass {
-
+    opacity: 70%;
     font-family: "bebas", sans-serif;
 
     position: fixed;
@@ -118,5 +122,20 @@ body {
     transform: scale(1.1);
 }
 
+.sobre {
 
+    background-image: url("assets/bgSobre.png");
+
+}
+
+.prototipo {
+    width: 220px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+
+}
 
