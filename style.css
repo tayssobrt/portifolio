@@ -11,7 +11,6 @@
     src: url("assets/fontes/coolvetica.otf") format("opentype");
 }
 
-
 html {
     scroll-behavior: smooth;
 }
@@ -124,7 +123,7 @@ body {
 }
 
 /* ================================
-   AVATAR
+   AVATAR CLAUDE
 ================================ */
 .avatar-container {
     display: flex;
@@ -188,7 +187,7 @@ body {
     min-height: 100vh;
     padding: 80px 40px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -197,19 +196,40 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: #1a1a1a;
+    padding-top: 120px;
+}
+
+.sobre .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;        
+    text-align: center;
+}
+
+.About {
+    text-align: center;
 }
 
 .projetos {
-    background-color: #222;
+    background-image: url("assets/3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .skills {
-    background-color: #1a1a1a;
+    background-image: url("assets/3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .links {
-    background-color: #222;
+    background-image: url("assets/3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .container {
@@ -229,7 +249,7 @@ body {
 }
 
 /* ================================
-   PROTOTIPO (Card Glass) ia
+   PROTOTIPO (Card Glass) IA
 ================================ */
 .prototipo {
     width: 220px;
@@ -246,7 +266,7 @@ body {
 }
 
 /* ================================
-   NAVBAR GLASS ia
+   NAVBAR GLASS IA
 ================================ */
 .navbar-glass {
     font-family: "bebas", sans-serif;
@@ -306,6 +326,10 @@ body {
     opacity: 0.8;
     pointer-events: none;
 }
+
+/* ================================
+   RESPONSIVO Ia
+================================ */
 
 @media (max-width: 1024px) {
     .home {
@@ -396,4 +420,86 @@ body {
         width: 45px;
         height: 45px;
     }
+}
+
+/* ------------ SECTIONS PADRÃO ------------ */
+section {
+    width: 100%;
+    padding: 120px 0;  
+    display: flex;
+    justify-content: center;
+}
+
+section .container {
+    max-width: 1100px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* ------------ SECTION SOBRE ------------ */
+.sobre {
+    background-image: url("assets/bgSobre.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.sobre p {
+    font-size: 24px;
+}
+
+/* ------------ SECTION PROJECTS ------------ */
+.projects {
+    background-image: url("assets/3.png");
+    color: white;
+}
+
+.projects .cards {
+    margin-top: 40px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects .card {
+    width: 300px;
+    background: #680404;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 0 20px #0004;
+    transition: 0.3s;
+}
+
+.projects .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 25px #0008;
+}
+
+/* ------------ SECTION SKILLS ------------ */
+.skills {
+    background-color: #f4f4f4;
+}
+
+.skills .icons {
+    margin-top: 40px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills img {
+    width: 70px;
+    transition: .3s;
+    filter: grayscale(50%);
+}
+
+.skills img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
 }
